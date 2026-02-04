@@ -1,0 +1,13 @@
+@import './font.css';
+@import 'tailwindcss';
+@import 'tailwindcss-primeui';
+
+@theme {
+  --color-primary: #4b74ac;
+}
+
+:root {
+  --p-primary-color: #4b74ac;
+  --p-primary-hover-color: #5a7ba8;
+  --p-primary-active-color: #7a8eaa;
+}
