@@ -34,6 +34,9 @@
           as="a"
           href="https://github.com/SharpDotNUT/silvermoon-hall"
           target="_blank" />
+        <NuxtLink to="/home">
+          <Button label="进入" />
+        </NuxtLink>
         <!-- <Button
           @click="playing = !playing"
           :label="playing ? '暂停' : '播放'" /> -->

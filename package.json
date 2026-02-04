@@ -1,7 +1,7 @@
 {
   "name": "silvermoon-hall",
   "type": "module",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "private": true,
   "scripts": {
     "build": "nuxt build",
@@ -20,6 +20,7 @@
     "@primeuix/themes": "^2.0.3",
     "@primevue/nuxt-module": "^4.5.4",
     "@tailwindcss/vite": "^4.1.18",
+    "ky": "^1.14.3",
     "tailwindcss": "^4.1.18",
     "tailwindcss-primeui": "^0.6.1"
   }
