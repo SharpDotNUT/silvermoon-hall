@@ -1,0 +1,42 @@
+@import url('https://fonts.font.im/css2?family=Outfit:wght@100..900&display=swap');
+@import url('https://fonts.font.im/css2?family=Noto+Sans+SC:wght@100..900&display=swap');
+@import url('https://fonts.font.im/css2?family=Material+Symbols+Outlined');
+@import 'tailwindcss';
+
+body {
+  transition:
+    background-color 0.25s,
+    color 0.25s;
+  color: var(--color-text);
+  background-color: var(--color-body);
+  color-scheme: var(--color-scheme);
+  font-weight: 500;
+  font-family: 'Outfit', 'Noto Sans SC', sans-serif;
+}
+
+h1 {
+  font-weight: 700;
+}
+
+body::selection {
+  background-color: var(--color-primary);
+  color: white;
+}
+html[color-scheme='dark'] {
+  body::selection {
+    color: black;
+  }
+}
+
+::-webkit-scrollbar {
+  width: 5px;
+  height: 5px;
+}
+
+::-webkit-scrollbar-track {
+  background: rgba(var(--color-background), 1);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--color-primary);
+}
