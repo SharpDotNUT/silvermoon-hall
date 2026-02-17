@@ -39,7 +39,13 @@ export const useAchievementStore = defineStore('achievement', () => {
     return Object.values(data.value.achievements).slice(start, end)
   })
 
-  const text = (id: number) => TM.get(locale.value, id)
+  const text = (id: number, params?: string[]) => {
+    let text_ = TM.get(locale.value, id) || ''
+    if (params?.[0]) {
+      text_ = text_.replace('{param0}', params[0])
+    }
+    return text_
+  }
 
   return {
     data,
